@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyMate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h2>Study<span>Mate</span></h2>
+<nav>
+<a href="#home">Home</a>
+<a href="#explore">Explore</a>
+<a href="#create">Create Group</a>
+<a href="#goals">My Goals</a>
+</nav>
+</header>
+<main>
+<section class="hero" id="home">
+<div>
+<p class="tag">LEARN TOGETHER, GROW TOGETHER</p>
+<h1>Find your perfect <span>study circle.</span></h1>
+<p>Connect with classmates, prepare for exams and achieve your goals together.</p>
+<a href="#explore" class="btn">Explore Groups</a>
+</div>
+<div class="hero-card">
+<h2>Study smarter.</h2>
+<p>Plan • Learn • Revise</p>
+</div>
+</section>
+<section class="stats">
+<div><h2 id="groupCount">0</h2><p>Study Groups</p></div>
+<div><h2 id="memberCount">0</h2><p>Students Joined</p></div>
+<div><h2 id="goalCount">0</h2><p>Goals Completed</p></div>
+</section>
+<section class="panel" id="explore">
+<p class="tag">FIND YOUR TEAM</p>
+<h2>Explore Study Groups</h2>
+<div class="filters">
+<input type="text" id="search" placeholder="Search groups...">
+<select id="subject">
+<option value="">All Subjects</option>
+<option>Maths</option>
+<option>Python</option>
+<option>Design Thinking</option>
+<option>DBMS</option>
+<option>DSA</option>
+</select>
+<select id="exam">
+<option value="">All Exams</option>
+<option>Midterm</option>
+<option>Final</option>
+</select>
+</div>
+<div id="groupList" class="groups"></div>
+</section>
+<section class="panel" id="create">
+<p class="tag">START A NEW CIRCLE</p>
+<h2>Create Study Group</h2>
+<form id="createForm">
+<input type="text" id="groupName" placeholder="Group Name" required>
+<select id="newSubject">
+<option>Maths</option>
+<option>Python</option>
+<option>Design Thinking</option>
+<option>DBMS</option>
+<option>DSA</option>
+</select>
+<select id="newExam">
+<option>Midterm</option>
+<option>Final</option>
+</select>
+<select id="location">
+<option>Library 2nd Floor</option>
+<option>Campus Lawn</option>
+<option>Computer Lab</option>
+</select>
+<input type="number" id="maxMembers" placeholder="Maximum Members" min="2" value="8" required>
+<button class="btn">Create Group</button>
+</form>
+</section>
+<section class="panel" id="goals">
+<p class="tag">YOUR DAILY PROGRESS</p>
+<h2>Revision Goals</h2>
+<form id="goalForm">
+<input type="text" id="goalInput" placeholder="Enter a revision goal..." required>
+<button class="btn">Add Goal</button>
+</form>
+<ul id="goalList"></ul>
+</section>
+</main>
+<footer>StudyMate </footer>
+<script src="script.js"></script>
+</body>
+</html>
